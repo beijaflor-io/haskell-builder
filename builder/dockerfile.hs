@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack runghc --package language-dockerfile --package ShellCheck
+-- stack runghc --package language-dockerfile --package ShellCheck --install-ghc
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
 {-# LANGUAGE TemplateHaskell   #-}
