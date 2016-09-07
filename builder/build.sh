@@ -18,7 +18,7 @@ package="$1"
 tag="${2-"$package":latest}"
 ghc_options=${ghc_options:--static -optl-static -optl-pthread}
 socket=/var/run/docker.sock
-file=Dockerfile
+file=$dockerfile
 
 echo "Building $package"
 stack setup "$(ghc --numeric-version)" --skip-ghc-check
